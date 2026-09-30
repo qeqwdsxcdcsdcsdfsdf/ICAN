@@ -1,0 +1,45 @@
+server:
+  port: 8082
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: face-attendance-gps
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/face_attendance_gps?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/*.xml
+
+upload:
+  path: ./upload
+
+baidu:
+  face:
+    api-key: your-api-key
+    secret-key: your-secret-key
+    group-id: attendance_group
+
+logging:
+  level:
+    com.attendance: DEBUG
+    org.mybatis: DEBUG

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_sign_in"
+        android:icon="@drawable/ic_sign_in"
+        android:title="签到"/>
+    <item
+        android:id="@+id/nav_records"
+        android:icon="@drawable/ic_records"
+        android:title="记录"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="我的"/>
+</menu>

@@ -1,0 +1,31 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Android local/build artifacts
+01-Android-App/.gradle/
+01-Android-App/app/build/
+01-Android-App/local.properties
+01-Android-App/.idea/workspace.xml
+01-Android-App/gradle/gradle-*/
+01-Android-App/gradle/gradle-*.zip
+01-Android-App/keystore/*.jks
+
+# Backend build artifacts
+02-SpringBoot-Server/target/
+
+# Frontend dependencies/build artifacts
+03-PC-Admin-Vue/node_modules/
+03-PC-Admin-Vue/dist/
+
+# Bundled local toolchains / archives
+android-sdk/
+apache-maven-3.9.6/
+gradle-*.zip
+maven.zip

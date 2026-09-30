@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.attendance.mapper.StaffMapper">
+    <select id="selectByStaffNo" resultType="com.attendance.entity.Staff">
+        SELECT * FROM staff WHERE staff_no = #{staffNo}
+    </select>
+</mapper>

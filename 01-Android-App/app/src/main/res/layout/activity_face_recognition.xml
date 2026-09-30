@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="←"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人脸识别"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请拍照进行身份验证"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保持光线充足，正对摄像头"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_face"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_active"/>
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_inactive"
+                android:layout_marginLeft="15dp"/>
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_inactive"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/btn_capture"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="拍照验证"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_primary"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+{
+  "name": "face-attendance-admin",
+  "version": "1.0.0",
+  "description": "人脸+GPS双重校验考勤系统管理后台",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ansi-regex": "^6.2.2",
+    "axios": "^1.6.5",
+    "caniuse-lite": "^1.0.30001800",
+    "cli-cursor": "^5.0.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "echarts": "^5.4.3",
+    "electron-to-chromium": "^1.5.387",
+    "element-ui": "^2.15.14",
+    "vue": "^2.7.14",
+    "vue-router": "^3.5.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8"
+  }
+}
