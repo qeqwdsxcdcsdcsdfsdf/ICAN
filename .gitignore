@@ -29,3 +29,11 @@ android-sdk/
 apache-maven-3.9.6/
 gradle-*.zip
 maven.zip
+
+*.zip
+android-sdk/
+.gradle/
+build/
+*.apk
+*.log
+
